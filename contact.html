@@ -1,0 +1,102 @@
+<!DOCTYPE.html>
+<html lang = "en">
+<!-- comment line -->
+<html>
+  <head>
+    <meta charset=" utf-8">
+    <!-- to consider the webpage to be responsive -->
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta name="description" content="my first web page deisgned">
+    <meta name="keywords" content="web design, first">
+    <meta name="author" content="Vyasraj Vaidya">
+    <title> vjVaidya | Contact </title>
+    <link rel = "stylesheet" href="./css/style.css"><!--styling sheet -->
+  </head>
+<body>
+
+  <header>
+    <div class = "container">
+      <div id="branding">
+        <h1> Vyasraj <span class = "highlight"> Vaidya </h1> <!-- wrapping n span allows the word to be highlighted and remain in the same line. Wrapping in div makes it move to the next line -->
+      </div>
+      <nav>
+        <ul>
+            <li> <a href= "index.html">Home</a></li>
+            <li> <a href= "aboutme.html">About Me</a></li>
+            <li class="current"> <a href= "contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id ="mainContact">
+    <div class ="container">
+      <article id = "main-col-con">
+        <h1 class = "page-title"> Contact </h1>
+
+        <div class="dark">
+          <h3> write me an email ! </h3>
+            <form action="mail_handler.php" method="post" name="form" class="form-box">
+      			<label for="name">Name</label><br>
+      			<input type="text" name="name" class="inp" placeholder="Enter Your Name" required><br>
+      			<label for="email">Email ID</label><br>
+      			<input type="email" name="email" class="inp" placeholder="Enter Your Email" required><br>
+      			<label for="message">Message</label><br>
+      			<textarea name="msg" class="msg-box" placeholder="Enter Your Message Here" required></textarea><br>
+      			<input type="submit" name="submit" value="Send" class="button_1">
+      		  </form>
+            <!--
+            <form class = "contact">
+              <div>
+                <label> Name </label> <br>
+                <input type = "text" placeholder="Name">
+              </div>
+              <div>
+                <label> Email </label> <br>
+                <input type = "text" placeholder="Email Address">
+              </div>
+              <div>
+                <label> Message </label> <br>
+                <textarea placeholder="Message"></textarea>
+              </div>
+              <button class = "button_1" type="submit"> Send </button>
+            </form>
+            -->
+          </div>
+        </article>
+        <aside id="sidebarContact1">
+          <h1> Other ways to Contact </h1>
+          <div class="dark">
+            <div class = "container"> <!-- the positioning of the box  -->
+              <!-- <div class = "sidebox"> --> <!-- -->
+                <a href="https://www.xing.com/profile/Vyasraj_Vaidya?sc_o=mxb_p"><img src="./img/Xing.png" height = "20">
+                <a href="https://www.linkedin.com/in/vyasraj-vaidya-7977097a/"><img src="./img/LinkedIn.png" height = "20">
+          </div>
+          </div>
+        </aside>
+        <aside id="sidebarContact2">
+          <div class="dark">
+            <div class = "container"> <!-- the positioning of the box  -->
+              <!-- <div class = "sidebox"> --> <!-- -->
+              <a href="https://github.com/vjVaidya"><img src="./img/gitHub.png" height = "20">
+              <a href="https://www.stackoverflow.com"><img src="./img/stackoverflow.png" height = "20">
+            </div>
+          </div>
+        </aside>
+        <aside id="sidebarContact3">
+          <div class="dark">
+            <div class = "container"> <!-- the positioning of the box  -->
+              <!-- <div class = "sidebox"> --> <!-- -->
+                <a href="https://www.facebook.com/vyasrajvaidya"><img src="./img/fb-art.png" height = "20">
+                <a href="https://www.instagram.com/vj_vaidya/"><img src="./img/insta.png" height = "20">
+          </div>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+  <footer>
+    <p> vaidya's first page, Copyright &copy; 2017</p>
+  </footer>
+</body>
+</html>

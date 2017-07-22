@@ -1,0 +1,98 @@
+<!DOCTYPE.html>
+<html lang = "en">
+<!-- comment line -->
+<html>
+  <head>
+    <meta charset=" utf-8">
+    <!-- to consider the webpage to be responsive -->
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <meta name="description" content="my first web page deisgned">
+    <meta name="keywords" content="web design, first">
+    <meta name="author" content="Vyasraj Vaidya">
+    <title> vjVaidya | Welcome </title>
+    <link rel = "stylesheet" href="./css/style.css"><!--styling sheet -->
+  </head>
+<body>
+  <header>
+    <div class = "container">
+      <div id="branding">
+        <h1> Vyasraj <span class = "highlight"> Vaidya </h1> <!-- wrapping n span allows the word to be highlighted and remain in the same line. Wrapping in div makes it move to the next line -->
+      </div>
+      <nav>
+        <ul>
+            <li class="current"> <a href= "index.html">Home</a></li>
+            <li> <a href= "aboutme.html">About Me</a></li>
+            <li> <a href= "contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section id = "showcase">
+      <div class="container">
+        <h1> Bio </h1>
+        <p> Engineer, Master of Science, mobile-photographer, tea- drinker, python-er, R-er, Machine Learn-er, Rookie Data Scientist and an enthusiast for the unexpected.</p>
+      </div>
+  </section>
+  <!-- <section id = "news">
+    <div class="container">
+      <h1> write an email</h1>
+      <form>
+      <input type="email" placeholder="Enter email..">
+      <button type ="submit" class ="button_1">Email</button>
+      </form>
+      <p> this is what I want to be doing.</p>
+    </div>
+  </section> -->
+  <section id ="boxes">
+    <div class ="container">
+      <div class ="box">
+        <!-- <img src ="./img/p1.png"> -->
+        <h3> Munich, Germany </h3>
+        <p><script> document.write(new Date().toLocaleDateString()); </script> </p>
+        </div>
+      <div class ="box">
+        <!-- <img src ="./img/p2.png"> -->
+        <!--<h5>  </h5>-->
+        <script>
+          function startTime() {
+              var today = new Date();
+              var h = today.getHours();
+              var m = today.getMinutes();
+              var s = today.getSeconds();
+              m = checkTime(m);
+              s = checkTime(s);
+              document.getElementById('txt').innerHTML =
+              h + ":" + m + ":" + s;
+              var t = setTimeout(startTime, 500);
+          }
+          function checkTime(i) {
+              if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+              return i;
+          }
+        </script>
+        <body onload="startTime()">
+          <div id="txt"></div>
+        </body>
+      </div>
+      <div class ="box">
+        <!-- <img src ="./img/p3.png"> -->
+        <!-- <h3> graphic design </h3> -->
+        <!-- hitwebcounter Code START -->
+        <a href="http://www.hitwebcounter.com" target="_blank">
+        <img src="http://hitwebcounter.com/counter/counter.php?
+        page=6708279&style=0007&nbdigits=5&type=page&initCount=0"
+        title="http://www.hitwebcounter.com/" Alt="http://www.hitwebcounter.com/"
+        border="0" > </a><br/>
+        <!-- hitwebcounter.com -->
+        <a href="http://www.hitwebcounter.com" title="Counter For Wordpress"
+        target="_blank" style="font-family: Geneva, Arial, Helvetica;
+        font-size: 8px; color: #9F9F97; text-decoration: underline ;">
+        <code>Counter For Wordpress</code></a>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p> vaidya's first page, Copyright &copy; 2017</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,242 @@
+body{
+  font: 15px/1.5 Times, Helvetica, sans-serif; /* font size/line spacing font types */
+  padding:0;
+  margin: 0;
+  background-color:#f4f4f4; /* light grey */
+}
+/* Global */
+.container{
+  width:80%; /* to make it responsive */
+  margin:auto;
+  overflow:hidden;
+}
+/* all ul's will have zero margin padding by default **/
+ul{
+  list-style-position: inside;/* the list bullets will fall inside the cell **/
+  margin:0;
+  padding:0;
+}
+
+.products td{
+    border: 1px dotted #999999;
+}
+
+.button_1{
+  height: 38px;
+  background: #e8491d; /* orange **/
+  border: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #ffffff;
+}
+.dark{
+  padding:15px;
+  background:#35424a; /* grey**/
+  color:#ffffff; /* white **/
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.leftsidebar{
+height:3300px;
+padding: 10px;
+background-color: #35424a; /* grey */
+margin-left: 2px; /* width of the leftsidebar */
+margin-right: 5px; /* width of the leftsidebar */
+}
+
+.leftsidebar a{ /* text and links in the left sidebar */
+  color: #ffffff; /*white*/
+  padding: 2px;
+  text-decoration: none; /* removes the underline from the list in the leftbar */
+}
+
+.leftsidebar li{/* list items in the leftsidebar */
+  list-style: none;
+  display: block;
+  padding: 15px; /* spacing between the education and skills etc. */
+  border-bottom: 1px solid #ffffff;/*thin line under each item in the left sidebar */
+}
+
+header{ /* Header **/
+  background:#35424a;
+  color:#ffffff;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #e8491d 3px solid;
+}
+header a{ /* Header links to be made white **/
+  color:#ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+/* move to global to make the entire page without margin and padding.
+header ul{
+  margin:0;
+  padding: 0;
+} **/
+
+header li{
+  float:left;
+  display:inline;
+  padding: 0 20px 0 20px;
+}
+header #branding{ /* branding to float to the left**/
+  float:left;
+}
+header #branding h1{ /* nav to float to the right**/
+  margin:0;
+}
+header nav { /* nav to float to the right**/
+  float: right;
+  margin-top:10px;
+}
+/* logo to be orange, highlight and class**/
+header .highlight, header .current a{
+  color:#e8491d;
+  font-weight: bold;
+}
+/* hover for the menu**/
+header a:hover{
+  color:#cccccc;
+  font-weight: bold;
+}
+/* showcase for the image in the backgorund */
+#showcase{
+  min-height: 400px;
+  background: url(../img/bkgrnd.png) no-repeat 0 -400px;
+  text-align: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /* color:#ffffff; because the background is now faded into a light colour**/
+}
+#showcase h1{
+  margin-top: 100px;
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+#showcase p{ /* change the text below Bio **/
+  font-size: 20px;
+  text-align: center;
+}
+/* boxes **/
+#boxes {
+  margin-top: 20px;
+}
+/* to make the boxes interactive and shrink once we scroll out**/
+#boxes .box{
+  float:left;
+  text-align: center;
+  width:30%;
+  padding:10px;
+}
+/* Boxes in the contact page */
+aside#sidebarContact1{
+  float: right;
+  width: 30%;
+  margin-top: 2px;
+  margin-bottom: 1px;
+  padding: 2px;
+}
+aside#sidebarContact2{
+  float: right;
+  width: 30%;
+  margin-top: 2px;
+  margin-bottom: 1px;
+  padding: 2px;
+}
+aside#sidebarContact3{
+  float: right;
+  width: 30%;
+  margin-top: 2px;
+  padding: 2px;
+}
+
+aside#sidebarContact img {
+  float: right;
+  width: 30%;
+  padding: 2px;
+}
+
+/* main column on About me page**/
+article#main-col{
+  float:left;
+  width:58%;
+}
+/* main column on Contact page**/
+article#main-col-con{
+  float:left;
+  width:50%;
+}
+
+/* right sidebar on the about me page**/
+aside#sidebar{
+  float:right;
+  width:31%;
+  margin-top:10px;
+}
+/* leftsidebar of the about me page**/
+aside#leftsidebar{
+  float:left;
+  width:10%; /* changes gap between left sidebar and central bar and the sidebar **/
+  margin-top:10px;
+  margin-right: 5px;
+}
+
+ul#contact li {
+  list-style: none;
+  padding: 20px;
+  border: #cccccc solid 1px;
+  margin-bottom: 5px;
+  background: #e6e6e6; /*light grey**/
+}
+
+footer{
+  padding: 20px;
+  margin-top: 20px;
+  color: #ffffff; /* white text in the footer **/
+  background-color: #e8491d; /* background orange for the footer**/
+  text-align: center;
+}
+
+/*Media queries to ensure that the device type does not affect the webpage*/
+@media screen and (max-width: 481px) {
+  header #branding and header nav,
+  header nav li,
+  #boxes .box,
+  article#main-col,
+  article#main-col-con,
+  aside#sidebarContact1,
+  aside#sidebarContact2,
+  aside#sidebarContact3,
+
+  aside#leftsidebar{
+    float:none;
+    text-align: center;
+    width: 100px;
+  }
+  aside#sidebar{
+    float: none;
+    text-align: center;
+    width: 100%;
+    image-orientation: center;
+  }
+  header{
+    padding-bottom: 20px;
+  }
+  #showcase h1{
+    margin-top: 20px;
+  }
+  #contact button_1 {
+    display: block;
+    width: 100%;
+    }
+  #contact form{
+    margin-bottom: 2px;
+    display: block;
+    width: 100%;
+  }
+}
